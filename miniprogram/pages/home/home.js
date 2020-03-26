@@ -20,7 +20,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    username:'咸松林',
+    username:'王明',
     age:28,
     students:[
       {id:110, name:'kobe', age:30},
