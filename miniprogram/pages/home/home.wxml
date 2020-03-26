@@ -1,3 +1,13 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+<!-- 1.数据绑定  -->
+<view>Hello {{username}}</view>
+<view>年龄：{{age}}</view>
+<!-- 2.列表展示 wx:for -->
+<view wx:for="{{students}}">{{item.name}} - {{item.age}}</view>
+<!-- 3.事件监听 改变data -->
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap="addBtnClick">+</button>
+<button size="mini" bindtap="subBtnClick">-</button>
+

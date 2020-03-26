@@ -1,11 +1,34 @@
 // pages/home/home.js
 Page({
-
+  subBtnClick(){
+    this.setData({
+      counter: this.data.counter - 1
+    })
+  },
+  /**
+   *  + 点击事件处理
+   */
+  addBtnClick(){
+    console.log("按钮被点击了");
+    // 界面不会发生变化
+    // this.data.counter += 1;
+    this.setData({
+      counter: this.data.counter + 1
+    })
+  },
   /**
    * 页面的初始数据
    */
   data: {
-
+    username:'咸松林',
+    age:28,
+    students:[
+      {id:110, name:'kobe', age:30},
+      {id:111, name:'james', age:33},
+      {id:112, name:'simith', age:27},
+      {id:113, name:'branch', age:29}
+    ],
+    counter:0
   },
 
   /**
