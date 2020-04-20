@@ -1,0 +1,11 @@
+<!--pages/input/input.wxml-->
+<input value="哈哈哈"> </input>
+<!-- 决定弹出键盘类型 (文本输入键盘/数字 /身份证 idcard/带小数点 digit) -->
+<input type="number" ></input>
+<input password ></input>
+<input placeholder="请输入内容"></input>
+<!-- 键盘的返回值 发送-->
+<input confirm-type="send"></input>
+<!-- 绑定事件 -->
+<input bindinput="handleInput" bindfocus="handleFocus" bindblur="handleBlur"> </input>
+

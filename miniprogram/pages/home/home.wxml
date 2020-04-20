@@ -1,3 +1,10 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+<!-- text 长按 文本被选中 -->
+<text selectable>\n你好啊天使~\n</text>
+<text space="nbsp">Hello World\n</text>
+<text space="ensp">Hello World\n</text>
+<text space="emsp">Hello World\n</text>
+
+<text decode>5 &gt; 3</text>

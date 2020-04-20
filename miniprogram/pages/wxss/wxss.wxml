@@ -1,0 +1,16 @@
+<!--pages/wxss/wxss.wxml-->
+<!-- 1.设置样式 -->
+<!-- 1.1 行内样式 style -->
+<view style="color: red; font-size: 30px">哈哈哈哈</view>
+<!-- 1.2 页面样式 class -->
+<view class="box">呵呵呵</view>
+<!-- 1.3 全局样式 class 在app.wxss中定义样式-->
+<view class="">嘿嘿嘿</view>
+
+<!-- wxss 单位   rpx 是px的一半 但是可适配 -->
+<view class="box1"></view>
+<view class="box2"></view>
+
+<!-- 样式导入 -->
+<view class="content1">Content1</view>
+<view class="content2">Content2</view>
