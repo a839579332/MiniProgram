@@ -1,0 +1,17 @@
+<!--pages/wxml/wxml.wxml-->
+<view>{{message}}</view>
+<view>{{firstname + ' ' + lastname}}</view>
+<view>{{nowTime}}</view>
+
+<button size='mini' bindtap='handleSwitchColor'>切换颜色</button>
+<!-- 通过一个变量 来控制属性 有或者没有 -->
+<view class='box {{isActive? "active":""}}' >哈哈哈</view>
+
+<view>-------------逻辑判断-------------------</view>
+<button size='mini' bindtap='handleIsShow'>切换显示</button>
+<view wx:if='{{isShow}}'>哈哈哈</view>
+<button size='mini' bindtap='handleAutoAdd'>每次增加8分</button>
+<view wx:if='{{score>90}}'>优秀</view>
+<view wx:elif='{{score>80}}'>良好</view>
+<view wx:elif='{{score>60}}'>及格</view>
+<view wx:else>不及格</view>
