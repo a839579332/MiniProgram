@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/action/action",
     "pages/wxs/wxs",
     "pages/wxml/wxml",
     "pages/wxss/wxss",

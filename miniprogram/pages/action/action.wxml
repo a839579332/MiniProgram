@@ -1,0 +1,31 @@
+<!--pages/action/action.wxml-->
+<text>学习事件绑定</text><view></view>
+<button size="mini"  bindtap="handleTap">按钮</button>
+<button size="mini"  bind:tap="handleTap">按钮</button>
+<button size="mini"  catch:tap="handleTap">按钮</button>
+<view class="box"
+      bind:touchstart="handleTouchStart"
+      bind:touchmove="handleTouchMove"
+      bind:touchend="handleTouchEnd"
+      bind:tap="handleTap"
+      bind:longpress="handleLongpress"></view>
+<button bind:tap='handleEventTap' size='mini'>事件触发</button>
+<view class="outter">
+  外层的View
+  <view class="inner">内层的View</view>
+</view>
+<view class='container'>
+<!-- 通过data-* 传递参数 -->
+  <block wx:for='{{titles}}' wx:key='index'>
+    <view class="item" bindtap="handleItemClick"
+                        data-index='{{index}}'
+                        data-item='{{item}}'>{{item}}</view>
+  </block>
+</view>
+
+<view class="view1" capture-bind:tap="handleCaptureView1" bindtap="handleBindView1">
+  View1
+  <view class="view2" capture-bind:tap="handleCaptureView2" bindtap="handleBindView2">
+  View2
+  </view>
+</view>
