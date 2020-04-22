@@ -15,3 +15,7 @@
 <view>{{info.message}}</view>
 <view>{{info.name}}</view>
 <view>{{info.sum(20,30)}}</view>
+<!-- 只能用相对路径 -->
+<wxs src="./format.wxs" module="format"/>
+<view>{{format.priceFormat(price,3)}}</view>
+<view>{{format.dateFormat(time,"yyyy/MM/dd hh:mm:ss")}}</view>
