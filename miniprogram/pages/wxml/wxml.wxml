@@ -15,3 +15,36 @@
 <view wx:elif='{{score>80}}'>良好</view>
 <view wx:elif='{{score>60}}'>及格</view>
 <view wx:else>不及格</view>
+<view>------------列表渲染------------</view>
+<!-- <view wx:for='{{["abc","def","efs"]}}'>{{item}} {{index}}</view>
+<view wx:for='why'>{{item}} {{index}}</view>
+<view wx:for='{{3}}'>{{item}}</view> -->
+<!-- 给item index 起别名 -->
+<!-- <view wx:for='{{movies}}' wx:for-item='movie' wx:for-index='i'>{{movie}} {{i}}</view>
+<block wx:for='{{nums}}' wx:for-item='inner_num'>
+  <block wx:for='{{inner_num}}'>
+    <view>{{item}}</view>
+  </block>
+</block> -->
+
+<!-- 4. key作用 底层虚拟DOM-->
+<!-- wx:key 是数据中某个唯一字段的值 比如unique -->
+<!-- <view wx:for='{{input_data}}' wx:key='unique'>{{item.id}}</view> -->
+<!-- 本身是个关键字 -->
+<!-- <view wx:for='{{["a","b","c"]}}' wx:key='*this'>{{item}}</view> -->
+
+<view>------------模板template------------</view>
+<template name='contentItem'>
+  <button size="mini">{{btnText}}</button>
+  <view>{{content}}</view>
+</template>
+<!-- 显示模板 -->
+<template is="contentItem" data="{{btnText:'按钮',content:'哈哈哈'}}"/>
+<template is="contentItem" data="{{btnText:'警告',content:'呵呵呵'}}"/>
+<template is="contentItem" data="{{btnText:'点击',content:'嘿嘿嘿'}}"/>
+<!-- 引入写在文件中的模板 -->
+<!-- <import src="模板的绝对路径/相对路径"/> -->
+<!-- include -->
+<!-- <view>------------ include ------------</view> -->
+<!-- <include src='./body.wxml'/> -->
+<view>{{numberFoFixed2(25.66666666)}}</view>

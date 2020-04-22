@@ -11,7 +11,19 @@ Page({
     nowTime: new Date().toLocaleString(),
     isActive: false,
     isShow: true,
-    score:50
+    score:50,
+    movies:['星际穿越','盗梦空间','大话西游'],
+    nums:[
+      [12,24,32],
+      [122,244,322],
+      [312,324,332]
+    ],
+    input_data: [
+      { id: 1, unique: "unique1" },
+      { id: 2, unique: "unique2" },
+      { id: 3, unique: "unique3" },
+      { id: 4, unique: "unique4" },
+    ]
   },
 
   /**
@@ -39,7 +51,9 @@ Page({
       score:this.data.score+8
     })
   },
-
+  numberFoFixed2(value){
+    value.foFixed(2)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
