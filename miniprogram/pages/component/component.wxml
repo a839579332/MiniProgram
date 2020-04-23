@@ -1,0 +1,12 @@
+<!--pages/component/component.wxml-->
+<mycpn/>
+<!-- 传递数据/样式 -->
+<myprop title="哈哈哈" content="你好"/>
+<myprop/>
+<myprop title="哈哈哈" titleclass="red" content="你好"/>
+
+<view>当前计数 {{counter}}</view>
+<myevent bind:increment="handlerIncrement"/>
+
+<w-tab-control titles='{{["衣服","鞋子","裤子"]}}' 
+              bind:itemClick='handleTabItemClick' />

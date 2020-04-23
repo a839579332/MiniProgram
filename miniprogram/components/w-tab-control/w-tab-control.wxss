@@ -1,0 +1,21 @@
+/* components/w-tab-control/w-tab-control.wxss */
+.tab-control {
+  display: flex;
+  height: 88 rpx;
+  line-height: 88 rpx;
+}
+.tab-item {
+  flex: 1;
+  text-align: center;
+}
+.active {
+  color: pink;
+    /* 下划线 */
+  /* border-bottom: 6rpx solid pink; */
+}
+
+.active text {
+  /* 表示 文本的上下间距变大 20rpx 左右间距变大 26rpx */
+  padding: 20rpx 26rpx;
+  border-bottom: 6rpx solid pink;
+}
