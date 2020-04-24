@@ -3,6 +3,9 @@
     "mycpn":"/components/mycpn/mycpn",
     "myprop":"/components/myprop/myprop",
     "myevent":"/components/myevent/myevent",
-    "w-tab-control":"/components/w-tab-control/w-tab-control"
+    "w-tab-control":"/components/w-tab-control/w-tab-control",
+    "my-sel":"/components/my-sel/my-sel",
+    "my-slot":"/components/my-slot/my-slot",
+    "mul-slot":"/components/mul-slot/mul-slot"
   }
 }

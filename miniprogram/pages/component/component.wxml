@@ -10,3 +10,21 @@
 
 <w-tab-control titles='{{["衣服","鞋子","裤子"]}}' 
               bind:itemClick='handleTabItemClick' />
+
+<button size='mini' bind:tap='handlerIncrementCpn'>修改组件内数据</button>
+<my-sel class='sel-class' />
+<view>---------单个slot------------</view>
+<my-slot>
+  <button size="mini">我是插槽</button>
+</my-slot>
+<my-slot>
+  <slider value="60"></slider>
+</my-slot>
+<!-- 多个插槽时
+注意：1.给每一个插槽 起一个名字：name 属性
+   2.在Component 对象中添加一个选项： options multipleSlots:true -->
+<view>---------多个slot------------</view>
+<mul-slot>
+  <button size="mini" slot='slot2'>我是slot2</button>
+  <slider value="20" slot='slot1'></slider>
+</mul-slot>

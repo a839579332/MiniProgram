@@ -15,6 +15,15 @@ Page({
   handleTabItemClick(event){
     console.log(event.detail.index, event.detail.title)
   },
+  handlerIncrementCpn(){
+    // 需要给自定义组件 加class 或者 id  如果是id 则换成#
+    const mysel = this.selectComponent('.sel-class');
+    console.log(mysel);
+    // mysel.setData({
+    //   counter:mysel.data.counter + 10
+    // })
+    mysel.incrementCounter(10);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
