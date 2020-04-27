@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/login/login",
+    "pages/toast/toast",
+    "pages/network/network",
     "pages/component/component",
     "pages/action/action",
     "pages/wxs/wxs",

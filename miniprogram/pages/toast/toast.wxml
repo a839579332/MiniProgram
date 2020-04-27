@@ -1,0 +1,10 @@
+<!--pages/toast/toast.wxml-->
+<button size="mini" bind:tap='handleShowToast'>showToast</button>
+
+<button size="mini" bind:tap='handleShowModal'>showModal</button>
+
+<button size="mini" bind:tap='handleShowLoading'>showLoading</button>
+
+<button size="mini" bind:tap='handleShowAction'>showAction</button>
+<!-- 分享按钮 自动调用 onShareAppMessage -->
+<button size="mini" open-type="share">分享</button>
